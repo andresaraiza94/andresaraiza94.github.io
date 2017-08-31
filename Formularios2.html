@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formularios HTML</title>
+    </head>
+    <body>
+        <h2> Formularios HTML</h2>
+        <!--
+        <form action="https://www.w3schools.com/action_page.php" method="GET">
+        -->
+        
+        
+        <form action="https://tecweb-acominf.c9users.io/envio.php" method="GET">
+           
+        <fieldset>
+                    <legend> Datos Personales </legend>
+                    <label>
+        
+            Nombre:<input type="text" name="nombreUsuario" placeholder="Nombre y Apellido">
+                    </label>
+            
+            <label for = "idcontraseña">password:</label> 
+            <input type="password" required name="Contraseña" id="Contraseña">
+            
+            Edad:<input type="number" name="Edad">
+              <br>  
+            Foto de perfil:
+            <input type="file" name="foto">
+            Fecha de Nacimiento
+            <input type="date" name="fecha">
+            <br>
+            Estado de origen
+            <select name="Estado"> <!--combobox-->
+                <option value="SLP">San Luis Potosi</option>
+                <option value="CDMX">CDMX</option>
+                <option value="GTO">Guanajuato</option>
+                <option value="Qto">Queretaro</option>
+            </select>
+            <br>
+            Materias favoritas:
+            <select name="materias" multiple>
+                <option>Pensamiento Computacional</option>
+                <option>Quimica</option>
+                <option>Compiladores e interpretes</option>
+                <option>Tecnologias Web</option>
+            </select>
+            <br>
+            Comentarios:
+            <textarea placeholder="Escribe tus comentarios"></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend> Preferencias </legend>
+                <p>Sistema Operativo:
+                        <p>Windows <input type="checkbox" name= "win">
+                Linux <input type="checkbox" name= "lin">
+                OSx <input type="checkbox" name= "osx">
+                <p>Telefono
+                        <p> Android <input type="radio" name ="andr">
+                OSx <input type="radio" name ="Os">
+
+            </fieldset>
+            <input type="reset" name="limpiar">
+
+
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </body>
+</html>
