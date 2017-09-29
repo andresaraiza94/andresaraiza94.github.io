@@ -1,16 +1,51 @@
-@media only screen and (min-width:1600px){
-    body{
-        background: yellow;
+@media only screen and (min-width:100rem){
+    .movil, .Desktop, .tablet{
 
+        display: none;
+        
+     }
+     html{
+        font-size: 200%;
     }
 }
-@media only screen and (min-width:1600px){
-    body{
-        background: yellow;
-
+@media only screen and (max-width:25rem){
+    .tablet, .Desktop, .Smart{
+        display: none;
+     }
+     html{
+        font-size: 75%;
     }
 }
 
+@media only screen and (min-width:25rem)and (max-width: 50rem){
+    .movil, .Desktop, .Smart{
+        display: none;
+    }
+    html{
+        font-size: 90%;
+    }
+}
+@media only screen and (min-width:50rem)and (max-width: 100rem){
+    .tablet, .movil, .Smart{
+        display: none;
 
+    }
+    html{
+        font-size: 100%;
+    }
+}
 
+body{
+    background-color: gray;
+}
 
+.contenedor{
+    max-width: 75rem;
+    background-color: white;
+    margin: 0 auto;
+}
+
+p{
+    border: .0625rem solid black;
+    padding: 1.25rem;
+}
