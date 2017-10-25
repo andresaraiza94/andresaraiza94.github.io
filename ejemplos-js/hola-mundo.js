@@ -1,33 +1,26 @@
-function imprimeNumeros(arreglo)
-{
-    for(i=0;i<arreglo.length;i++)
-        {
-            document.write('<br>');
-            document.write(arreglo[i]);
-           
-        
-        }
-}
-
 document.write("Hola desde JavaScript");
-/*notacion literal de arreglos*/
-var arreglo = [3, 5, 7];
-imprimeNumeros(arreglo);
+imprimeNumeros(11);
+var arreglo=[ 3,  5, 7];
+        for (var i=0 ; i > 10 ;i ++)
+        {
+            document.write(i);
+            document.write('<br>');
+        }
+        window.alert("Yo aqui dando lata");
+        console.log("Hola para la consola");
 
-
-/*notacion constructor de arreglo*/
-var arreglo2= new Array[9, 11, 13];
-imprimeNumeros(arreglo2);
-
-console.log("Hola para la consola");
-
+fuction; imprimeNumeros(max)
+        {
+            for (var i =0 ; i < max ; i++ )
+                {
+                    document.write(i);
+                    document.write('<br>');
+                }
+        }
+/* Notacion literal de objetos*/
 var triangulo = {
     base: 3,
     altura: 5,
-    area: function(){
-        console.log("area = " + this.base * this.altura/2);
-    }
-};
-
-triangulo.area();
+    
+}
 
